@@ -13,17 +13,21 @@ public class Detale {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private String pavadinimas;
+
+    @Column(nullable = false)
     private String kaina;
+
+    @Column(nullable = false)
     private Long kiekis;
-//    private Long automobilis_id;
-//    private Long sandelys_id;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "automobilis_id")
-    private Sandelys sandelys;
+    private Automobilis automobilis;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "sandelys_id")
-    private Automobilis automobilis;
+    private Sandelys sandelys;
 }

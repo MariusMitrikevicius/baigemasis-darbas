@@ -23,7 +23,7 @@ public class Sandelys {
     @Column(nullable = false, length = 200)
     private String adresas;
 
-    @OneToMany(mappedBy = "sandelys", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "sandelys", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Detale> detales;
 
 }

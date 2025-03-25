@@ -20,7 +20,7 @@ public class Automobilis {
     private String vin_kodas;
     private String marke;
 
-    @OneToMany(mappedBy = "automobilis", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "automobilis", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Detale> detales;
 
 }
