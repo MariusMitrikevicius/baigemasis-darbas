@@ -17,13 +17,17 @@ public class Automobilis {
     private Long id;
 
     @Column(length = 17, unique = true, nullable = false)
-    private String vin_kodas;
+    private String vinKodas;
+
+    @Column(nullable = false, length = 50)
     private String marke;
 
     @OneToMany(mappedBy = "automobilis", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Detale> detales;
 
 }
+
+
 
 
 

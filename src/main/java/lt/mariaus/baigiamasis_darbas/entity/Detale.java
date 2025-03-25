@@ -24,10 +24,12 @@ public class Detale {
     private Long kiekis;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "automobilis_id")
+    @JoinColumn(name = "automobilis_id", nullable = false)
     private Automobilis automobilis;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "sandelys_id")
     private Sandelys sandelys;
 }
+
+
