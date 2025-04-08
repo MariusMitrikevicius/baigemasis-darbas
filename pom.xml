@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>lt.mariaus</groupId>
-	<artifactId>baigemasis-darbas</artifactId>
+	<artifactId>baigiamasis-darbas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>baigemasis-darbas</name>
 	<description>baigemasis-darbas</description>

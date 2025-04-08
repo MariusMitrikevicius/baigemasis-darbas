@@ -27,9 +27,10 @@ public class Detale {
     @JoinColumn(name = "automobilis_id", nullable = false)
     private Automobilis automobilis;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "sandelys_id")
     private Sandelys sandelys;
+
 }
 
 
